@@ -1,0 +1,20 @@
+name: random_table-env
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python=3.13
+  - pytest
+  - blackd
+  - isort
+
+  # remove/modify these as needed
+  - numpy
+  - pandas
+
+  # keep this to install your Python package locally
+  - pip
+  - pip:
+    - --editable .
